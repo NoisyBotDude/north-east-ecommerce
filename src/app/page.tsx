@@ -36,12 +36,6 @@ const Home = () => {
           { title: "Bamboo Scenery Fan", price: "Rs. 60", imageUrl: "https://5.imimg.com/data5/SELLER/Default/2021/4/UZ/QQ/FB/16024987/bamboo-scenery-fan-500x500.jpg", rating: 5, by: "ecoBirdy", id: 3 },
         ]}
       />
-      <PromoSection
-        title="Make Learning Fun"
-        description="The gateway to a bright childhood"
-        buttonText="Shop ecoBirdy"
-        imageUrls={["/path-to-chair-1.jpg", "/path-to-chair-2.jpg"]}
-      />
       <WhatWeCareAbout
         items={[
           {
