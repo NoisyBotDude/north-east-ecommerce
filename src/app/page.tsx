@@ -19,7 +19,7 @@ const Home = () => {
       <GiftSection
         cards={[
           { title: "Best Sellers", imageUrl: "https://www.goodeeworld.com/cdn/shop/files/HP_BestSellers_basket_1080x.jpg?v=1729115190" },
-          { title: "Gifts Under 75 USD", imageUrl: "https://www.goodeeworld.com/cdn/shop/files/HP_GiftsUnder75_Haws_1080x.jpg?v=1729713870" },
+          { title: "Gifts Under 1000", imageUrl: "https://www.goodeeworld.com/cdn/shop/files/HP_GiftsUnder75_Haws_1080x.jpg?v=1729713870" },
           { title: "New Arrivals", imageUrl: "https://www.goodeeworld.com/cdn/shop/files/HP_NewArrivals_f7d3b334-fc99-44bc-a15a-39fc3fff7d40_1080x.jpg?v=1729712806" },
         ]}
       />
@@ -31,10 +31,9 @@ const Home = () => {
       />
       <ChosenForYou
         products={[
-          { title: "Shakerbraid Multicolor", price: "$80.00", imageUrl: "https://cdn.shopify.com/s/files/1/0071/1684/9252/products/Goodee-Berea-College-Shakerbraid-Multicolor_400x400.jpg?v=1632945092", rating: 5, by: "Berea College" },
-          { title: "Pebble Lighter", price: "$140.00", imageUrl: "https://cdn.shopify.com/s/files/1/0071/1684/9252/files/PEBBLE-JADE_28518_400x400.jpg?v=1727273468", rating: 3, by: "Maison Ko" },
-          { title: "Charlie Chair", price: "$225.00", imageUrl: "https://cdn.shopify.com/s/files/1/0071/1684/9252/products/EC_CHA050_5537_400x400.jpg?v=1678382860", rating: 5, by: "ecoBirdy" },
-          { title: "All Bright Set", price: "$750.00", imageUrl: "https://cdn.shopify.com/s/files/1/0071/1684/9252/products/ECSET050C_5482_400x400.jpg?v=1676925919", rating: 5, by: "ecoBirdy" },
+          { title: "Handloom Pure Cotton Mising Design Mekhela Sador With Blouse Material", price: "Rs. 300", imageUrl: "https://assamproducts.com/assets/product/images/lg-17268146660.jpg", rating: 5, by: "Ashish Sarmah",  id: 1 },
+          { title: "Big Bamboo Oval Jewelry Box", price: "Rs. 100", imageUrl: "https://5.imimg.com/data5/SELLER/Default/2021/4/TQ/MC/BH/16024987/big-bamboo-oval-jewelry-box-500x500.jpg", rating: 5, by: "ecoBirdy", id: 2 },
+          { title: "Bamboo Scenery Fan", price: "Rs. 60", imageUrl: "https://5.imimg.com/data5/SELLER/Default/2021/4/UZ/QQ/FB/16024987/bamboo-scenery-fan-500x500.jpg", rating: 5, by: "ecoBirdy", id: 3 },
         ]}
       />
       <PromoSection

@@ -1,72 +1,67 @@
-"use client"
+"use client";
 
-import ImageGallery from '../../../components/custom/ImageGallery';
-import ProductDetails from '../../../components/custom/ProductDetails';
-import ProductDescription from '../../../components/custom/ProductDescription';
-import CustomerReviews from '../../../components/custom/CustomerReviews';
-import Navbar from '@/components/custom/Navbar';
+import { useState, useEffect } from "react";
+import { useRouter, useParams } from "next/navigation";
+import ImageGallery from "../../../components/custom/ImageGallery";
+import ProductDetails from "../../../components/custom/ProductDetails";
+import ProductDescription from "../../../components/custom/ProductDescription";
+import CustomerReviews from "../../../components/custom/CustomerReviews";
+import Navbar from "@/components/custom/Navbar";
 
 const ProductDetailsPage: React.FC = () => {
+  const [product, setProduct] = useState<any | null>(null);
+  const params = useParams();
+  
+  useEffect(() => {
+        const { id } = params;
+        const products = JSON.parse(localStorage.getItem("products") || "[]");
+        const foundProduct = products.find((p: any) => p.id === Number(id));
+        setProduct(foundProduct);
+  }, []);
+
+  if (!product) return <p>Loading...</p>;
+
   return (
     <>
-        <Navbar />
-        <div className="container mx-auto py-10">
+      <Navbar />
+      <div className="container mx-auto py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Image Gallery */}
-            <ImageGallery
-            images={[
-                'https://www.goodeeworld.com/cdn/shop/products/Goodee-Berea-College-Shakerbraid-Multicolor_1296x.jpg?v=1632945092',
-                'https://www.goodeeworld.com/cdn/shop/products/Goodee-Berea-College-Shakerbraid-Multicolor-2_1296x.jpg?v=1632945096',
-                'https://www.goodeeworld.com/cdn/shop/products/Goodee-Berea-College-Shakerbraid-Multicolor-3_1296x.jpg?v=1632945100',
-            ]}
-            />
+          {/* Image Gallery */}
+          <ImageGallery images={[product.imageUrl]} />
 
-            {/* Product Details */}
-            <ProductDetails
-            title="Shakerbraid Multicolor"
-            price="$80.00"
-            seller="Berea College"
-            rating={4.9}
-            reviewsCount={13}
+          {/* Product Details */}
+          <ProductDetails
+            title={product.title}
+            price={product.price}
+            seller={product.by}
+            rating={product.rating}
+            reviewsCount={product.reviews.length}
             quantity={1}
-            onAddToCart={() => console.log('Added to Cart')}
-            />
+            onAddToCart={() => console.log("Added to Cart")}
+          />
         </div>
 
         <div className="mt-10">
-            {/* Product Description */}
-            <ProductDescription
-            description="Building a collection of plastic-free house cleaning tools..."
-            features={['Handcrafted', 'Eco-friendly', 'Durable']}
-            shippingInfo="Free returns within 30 days."
-            causes={['Environmental Conservation', 'Handmade Craft Support']}
-            />
-        </div>
-
-        <div className="mt-10">
-            {/* Customer Reviews */}
-            <CustomerReviews
-            reviews={[
-                {
-                name: 'Anne M.',
-                rating: 5,
-                date: '10/28/23',
-                comment: 'I do love a good broom!',
-                helpful: 0,
-                notHelpful: 0,
-                },
-                {
-                name: 'Kristine A.',
-                rating: 5,
-                date: '08/22/23',
-                comment: 'Keeps things looking lovely...',
-                helpful: 0,
-                notHelpful: 0,
-                },
+          {/* Product Description */}
+          <ProductDescription
+            description={product.description}
+            features={[
+              `Material: ${product.material}`,
+              `Shape: ${product.shape}`,
+              `Pattern: ${product.pattern}`,
+              `Weight: ${product.weight}`,
+              `Country of Origin: ${product.countryOfOrigin}`,
             ]}
-            />
+            shippingInfo="Free returns within 30 days."
+            causes={["Handmade Craft Support", "Eco-friendly Materials"]}
+          />
         </div>
+
+        <div className="mt-10">
+          {/* Customer Reviews */}
+          <CustomerReviews reviews={product.reviews} />
         </div>
+      </div>
     </>
   );
 };
