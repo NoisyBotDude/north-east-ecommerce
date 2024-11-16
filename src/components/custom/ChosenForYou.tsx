@@ -6,6 +6,7 @@ interface ProductCard {
     imageUrl: string;
     rating: number; // Use stars (e.g., 4 for 4 stars)
     by: string;
+    id: number;
   }
   
   interface ChosenForYouProps {
@@ -19,7 +20,7 @@ interface ProductCard {
           <h2 className="text-3xl font-bold text-center mb-8">Chosen For You</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {products.map((product) => (
-              <Link href={`/products/${product.title}`} key={product.title}>
+              <Link href={`/products/${product.id}`} key={product.id}>
                 <div key={product.title} className="text-center">
                   <img
                     src={product.imageUrl}
