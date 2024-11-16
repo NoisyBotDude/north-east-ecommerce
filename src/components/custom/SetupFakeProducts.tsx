@@ -92,10 +92,58 @@ const generateFakeProducts = () => {
     localStorage.setItem("products", JSON.stringify(products));
   };
 
+  const generateFakeStories = () => {
+    const stories = [
+      {
+        id: 1,
+        title: "Reviving Assam’s Silk Heritage",
+        description:
+          "The journey of Muga and Eri silk from the villages of Assam to becoming symbols of sustainable fashion.",
+        imageUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/e/e7/Muga_silk_weaving.jpg",
+        content: `
+          Assam's silk heritage has been a defining symbol of sustainable craftsmanship. The Muga silk, often referred to as the 'Golden Thread,' is unique to this region. 
+          The Eri silk, also called the 'Peace Silk,' is celebrated for its eco-friendly production and warm texture. From the serene villages of Sualkuchi, 
+          known as the 'Manchester of Assam,' this rich heritage has adorned global fashion stages while empowering countless weavers.
+        `,
+      },
+      {
+        id: 2,
+        title: "Weaving Dreams in Nagaland",
+        description:
+          "The intricate art of Naga handloom weaving, preserving cultural heritage through vibrant shawls and fabrics.",
+        imageUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/6/69/Naga_Shawl.jpg",
+        content: `
+          Naga shawls are more than just garments; they are cultural narratives woven into vibrant fabrics. Each motif tells a story of the wearer's identity, 
+          status, and heritage. This art form is not just about aesthetics but preserving a way of life, passed down through generations.
+        `,
+      },
+      {
+        id: 3,
+        title: "Handcrafted Bamboo Wonders of Meghalaya",
+        description:
+          "Exploring the unique bamboo products of Meghalaya, from baskets to home décor, crafted by skilled artisans.",
+        imageUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/f/f9/Bamboo_basket.jpg",
+        content: `
+          Bamboo crafts in Meghalaya are a testament to sustainable living and skilled craftsmanship. From sturdy baskets to intricate home décor, 
+          these products blend functionality with beauty. For the artisans, bamboo is not just a material but a way of life, deeply rooted in their cultural ethos.
+        `,
+      },
+    ];
+    
+    localStorage.setItem("stories", JSON.stringify(stories));
+  }
+
+
 const SetupFakeProducts = () => {
   useEffect(() => {
     if (!localStorage.getItem("products")) {
       generateFakeProducts();
+    }
+    if (!localStorage.getItem("stories")) {
+      generateFakeStories();
     }
   }, []);
 

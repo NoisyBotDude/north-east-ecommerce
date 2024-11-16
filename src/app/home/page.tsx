@@ -67,25 +67,28 @@ const Home = () => {
       <GoodStories
         stories={[
           {
-            title: "Bringing Egypt’s Artistry Home",
+            title: "Reviving Assam’s Silk Heritage",
             description:
-              "Anût Cairo’s Journey of Craft and Community with Founder, Goya Gallagher.",
-            imageUrl: "https://www.goodeeworld.com/cdn/shop/articles/MGK_254_Goya_Gallagher_B1_1_Malak_Kabbani_2024_1_1_900x.jpg?v=1730387751",
-            link: "/stories/egypt-artistry",
+              "The journey of Muga and Eri silk from the villages of Assam to becoming symbols of sustainable fashion.",
+            imageUrl:
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Assamese_Muga_With_Japi.jpg/440px-Assamese_Muga_With_Japi.jpg", // Replace with a better image if needed
+            link: "/stories/1",
           },
           {
-            title: "Weaving Beyond Tradition",
+            title: "Weaving Dreams in Nagaland",
             description:
-              "Master Weaver Mary Ayinbora’s Journey with Baba Tree.",
-            imageUrl: "https://www.goodeeworld.com/cdn/shop/articles/petlamp_gurunsi_28_artisan_Mary_Ayinbogra_Baba_Tree_Basket_Company_1_900x.jpg?v=1730386670",
-            link: "/stories/weaving-tradition",
+              "The intricate art of Naga handloom weaving, preserving cultural heritage through vibrant shawls and fabrics.",
+            imageUrl:
+              "https://upload.wikimedia.org/wikipedia/commons/6/62/Women_weaving_in_Beni_Hassan_tomb_%28%D0%92%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D0%BA%D0%B0%D1%86%D0%BA%D0%B8%D0%B9_%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%BA_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%29.jpg", // Replace with a better image if needed
+            link: "/stories/2",
           },
           {
-            title: "Haws Tools for Fall Harvesting: A Seasonal Guide",
+            title: "Handcrafted Bamboo Wonders of Meghalaya",
             description:
-              "Vegetable Gardener and Author Rob Smith opens the gate to his autumn garden, a place where heirloom tools and cherished memories intertwine.",
-            imageUrl: "https://www.goodeeworld.com/cdn/shop/articles/IMG_2336_1_1_900x.jpg?v=1727297315",
-            link: "/stories/fall-harvesting",
+              "Exploring the unique bamboo products of Meghalaya, from baskets to home décor, crafted by skilled artisans.",
+            imageUrl:
+              "https://thegypsychiring.com/wp-content/uploads/2023/04/Mawryngkhang-Trek-Height-Mawryngkhang-Trek-Photos-The-Gypsy-Chiring.webp", // Replace with a better image if needed
+            link: "/stories/3",
           },
         ]}
       />
