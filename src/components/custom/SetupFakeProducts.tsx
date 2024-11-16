@@ -100,7 +100,7 @@ const generateFakeProducts = () => {
         description:
           "The journey of Muga and Eri silk from the villages of Assam to becoming symbols of sustainable fashion.",
         imageUrl:
-          "https://upload.wikimedia.org/wikipedia/commons/e/e7/Muga_silk_weaving.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Assamese_Muga_With_Japi.jpg/440px-Assamese_Muga_With_Japi.jpg",
         content: `
           Assam's silk heritage has been a defining symbol of sustainable craftsmanship. The Muga silk, often referred to as the 'Golden Thread,' is unique to this region. 
           The Eri silk, also called the 'Peace Silk,' is celebrated for its eco-friendly production and warm texture. From the serene villages of Sualkuchi, 
@@ -113,7 +113,7 @@ const generateFakeProducts = () => {
         description:
           "The intricate art of Naga handloom weaving, preserving cultural heritage through vibrant shawls and fabrics.",
         imageUrl:
-          "https://upload.wikimedia.org/wikipedia/commons/6/69/Naga_Shawl.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/6/62/Women_weaving_in_Beni_Hassan_tomb_%28%D0%92%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D0%BA%D0%B0%D1%86%D0%BA%D0%B8%D0%B9_%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%BA_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%29.jpg",
         content: `
           Naga shawls are more than just garments; they are cultural narratives woven into vibrant fabrics. Each motif tells a story of the wearer's identity, 
           status, and heritage. This art form is not just about aesthetics but preserving a way of life, passed down through generations.
@@ -125,7 +125,7 @@ const generateFakeProducts = () => {
         description:
           "Exploring the unique bamboo products of Meghalaya, from baskets to home décor, crafted by skilled artisans.",
         imageUrl:
-          "https://upload.wikimedia.org/wikipedia/commons/f/f9/Bamboo_basket.jpg",
+          "https://thegypsychiring.com/wp-content/uploads/2023/04/Mawryngkhang-Trek-Height-Mawryngkhang-Trek-Photos-The-Gypsy-Chiring.webp",
         content: `
           Bamboo crafts in Meghalaya are a testament to sustainable living and skilled craftsmanship. From sturdy baskets to intricate home décor, 
           these products blend functionality with beauty. For the artisans, bamboo is not just a material but a way of life, deeply rooted in their cultural ethos.
