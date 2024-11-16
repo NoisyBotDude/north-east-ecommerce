@@ -31,13 +31,13 @@ const ProductDetailsPage: React.FC = () => {
 
           {/* Product Details */}
           <ProductDetails
+            id={product.id}
             title={product.title}
             price={product.price}
             seller={product.by}
             rating={product.rating}
             reviewsCount={product.reviews.length}
             quantity={1}
-            onAddToCart={() => console.log("Added to Cart")}
           />
         </div>
 
